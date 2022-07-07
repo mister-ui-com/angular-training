@@ -1,0 +1,10 @@
+
+<ul>
+  <li> <a routerLink="home">Home</a> </li>
+  <li> <a routerLink="contact-us">Contact Us</a> </li>
+  <li> <a [routerLink]="['product-details', 123]">Product Details</a> </li>
+</ul>
+
+<div style="background: #eee; border: 2px solid #888">
+  <router-outlet></router-outlet>
+</div>
