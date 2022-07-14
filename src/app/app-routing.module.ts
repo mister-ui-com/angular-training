@@ -5,15 +5,17 @@ import { HomeComponent } from './home/home.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductOverviewComponent } from './product-overview/product-overview.component';
 import { ProductSpecsComponent } from './product-specs/product-specs.component';
-import { QuizComponent } from './quiz/quiz.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { StudentListComponent } from './student-list/student-list.component';
 
 
 const routes: Routes = [
   // {path: '', redirectTo: 'home', pathMatch:"full"},
+  
   {path: 'home', component: HomeComponent},
   {path: 'test', loadChildren: () => import('./test/test.module').then(mod => mod.TestModule)  },
-  {path: 'students', component: QuizComponent},
+
+  {path: 'students', component: StudentListComponent},
   {path: 'students/details/:studentId', component: StudentDetailsComponent},
   // {path: 'product-details/:productId', component: ProductDetailsComponent, 
   //   children: [

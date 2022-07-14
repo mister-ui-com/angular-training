@@ -1,0 +1,30 @@
+<div class="bg-light border mt-5">
+    <div class="container">
+     <table class="table">
+       <thead>
+         <tr>
+           <th scope="col">id</th>
+           <th scope="col">Image</th>
+           <th scope="col">First Name</th>
+           <th scope="col">Last Name</th>
+           <th scope="col">email</th>
+           <th scope="col">Actions</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let emp of userList">
+           <td>{{emp.id}}</td>
+           <td><img class="img-thumbnail" src="{{emp.avatar}}" /></td>
+           <td>{{emp.first_name}}</td>
+           <td>{{emp.last_name}}</td>
+           <td>{{emp.email}}</td>
+           <td>
+             <button class="btn btn-success" [routerLink]="['details', emp.id]">View Student</button>
+           </td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+ </div>
+ 
+ 

@@ -12,10 +12,10 @@ import { ProductOverviewComponent } from './product-overview/product-overview.co
 import { ProductSpecsComponent } from './product-specs/product-specs.component';
 import { ReactiveFormsComponent } from './forms/reactive-forms/reactive-forms.component';
 import { CommonModule } from '@angular/common';
-import { QuizComponent } from './quiz/quiz.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { GenericInterceptorInterceptor } from './interceptors/generic-interceptor.interceptor';
+import { StudentListComponent } from './student-list/student-list.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +27,8 @@ import { GenericInterceptorInterceptor } from './interceptors/generic-intercepto
     ProductSpecsComponent,
     TemplateDrivenComponent,
     ReactiveFormsComponent,
-    QuizComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    StudentListComponent
     
   ],
   imports: [
