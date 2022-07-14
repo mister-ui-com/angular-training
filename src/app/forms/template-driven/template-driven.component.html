@@ -1,0 +1,30 @@
+<!-- <div class="container mt-5">
+  <div class="row">
+    <div class="col-xs-12">
+      <form (ngSubmit)="test()" #courseForm="ngForm">
+        <div class="row text-center">
+          <div class="col-sm-5 form-group">
+            <label for="courseName">Course Name</label>
+            <input type="text" id="courseName" name="courseName" class="form-control" [(ngModel)]="courseName"
+              #cName="ngModel" required>
+            <div style="color:red" *ngIf="cName.errors && (cName.dirty || cName.touched)">
+              <p *ngIf="cName.errors['required']">
+                Course Name is required
+              </p>
+
+            </div>
+          </div>
+          <div class="col-sm-5 form-group">
+            <label for="courseDesc">Course Description</label>
+            <input type="text" id="courseDesc" name="courseDesc" class="form-control" [(ngModel)]="courseDesc">
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-2 mx-auto">
+            <button class="btn btn-success" type="submit">Submit</button>
+            <button class="btn btn-warning" type="button" (click)="clear()">Clear</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div> -->

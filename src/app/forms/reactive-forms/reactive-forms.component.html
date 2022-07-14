@@ -1,0 +1,15 @@
+<div style="padding: 40px; "> 
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" >
+        <input type="text" name="name" placeholder="Your name"    formControlName="name">
+        <div *ngIf="contactForm.get('name').invalid && contactForm.get('name').touched" style="color: red;">
+            <span>*Name is mandatory field</span>
+        </div>
+
+        <br />
+        <input type="text" name="email" placeholder="Your email" formControlName="email"> <br />
+        <input type="text" name="subject" placeholder="Subject" formControlName="subject"> <br />
+        <textarea name="message" placeholder="Your Message" formControlName="message"></textarea> <br />
+        <button type="submit" class="btn btn-large" [disabled]="contactForm.invalid">Send Message</button> <br />
+    </form>
+</div>
