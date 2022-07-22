@@ -1,0 +1,7 @@
+<div style="background: #eee; padding: 30px">
+
+    <p>parent works! {{message}}</p>
+    
+    <app-child [msg]="message" (messageEvent)="receiveData($event)"></app-child>
+    
+</div>

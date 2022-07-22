@@ -24,12 +24,8 @@ export class AppComponent implements OnInit{
 
   }
 
-  ngOnInit(){
-    // this.epS.getEmployees().subscribe(val => {
-    //   console.log(val);
-    //   this.empList = val;
-    //  });
- 
+  ngOnInit() {
+    console.log(`AppComponent is initialized 0`);
   }
    
 }

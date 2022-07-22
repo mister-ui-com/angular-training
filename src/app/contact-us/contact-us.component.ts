@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-contact-us',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
+   studentName: string;
+
   constructor() { }
 
   ngOnInit() {
+    console.log("ContactUsComponent");
+    this.studentName =  "John, Doe";
   }
-
+ 
+  
 }

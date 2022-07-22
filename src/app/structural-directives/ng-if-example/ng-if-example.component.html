@@ -1,0 +1,14 @@
+<div style="background: yellow; padding : 30px">
+    <h4>ng-if-example works!</h4>
+    <a (click)="changeFlag()" href="#">Click Me to toggle isLoggedIn</a>
+    <p *ngIf="isLoggedIn else myElseVar">
+        This is from *ngIf when condition is = {{isLoggedIn}}
+    </p>    
+
+    <ng-template #myElseVar>
+        <p>This is from <b>else</b> block, when condition is = {{isLoggedIn}}</p>
+    </ng-template>
+
+    <br />
+</div>
+

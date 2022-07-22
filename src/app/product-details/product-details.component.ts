@@ -10,6 +10,7 @@ export class ProductDetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(`ProductDetailsComponent initialized 2.1`);
   }
 
 }

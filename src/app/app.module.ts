@@ -16,6 +16,11 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { GenericInterceptorInterceptor } from './interceptors/generic-interceptor.interceptor';
 import { StudentListComponent } from './student-list/student-list.component';
+import { HighlightJsModule } from 'ngx-highlight-js';
+import { SharedModule } from './shared/shared.module';
+import { ParentComponent } from './data-sharing/parent/parent.component';
+import { ChildComponent } from './data-sharing/child/child.component';
+import { NgIfExampleComponent } from './structural-directives/ng-if-example/ng-if-example.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,10 @@ import { StudentListComponent } from './student-list/student-list.component';
     TemplateDrivenComponent,
     ReactiveFormsComponent,
     StudentDetailsComponent,
-    StudentListComponent
+    StudentListComponent,
+    ParentComponent,
+    ChildComponent,
+    NgIfExampleComponent
     
   ],
   imports: [
@@ -37,7 +45,9 @@ import { StudentListComponent } from './student-list/student-list.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HighlightJsModule,
+    SharedModule
   ],
   providers: [
     {
